@@ -1,4 +1,4 @@
-###User Data Management API
+#User Data Management API
 
 This assignment involves building a set of APIs that manage user data, interact with a database, and handle email notifications. The APIs will handle operations such as uploading user data, viewing user data, backing up the database, and restoring the database.
 
