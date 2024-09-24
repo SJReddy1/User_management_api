@@ -22,11 +22,12 @@ Daniel Lee,daniel.l@example.com,daniellee,404 Cedar St,ADMIN
 Jessica Martinez,jessica.m@example.com,jessicam,505 Walnut St,USER
 Paul Garcia,paul.g@example.com,paulgarcia,606 Ash St,USER
 Laura Clark,laura.c@example.com,lauraclark,707 Cherry St,ADMIN
-Build APIs
+
+## Build APIs
 Upload and Store Data API
 
 ### Endpoint: POST /api/upload
-Description: Allows an admin to upload the data.csv file.
+Description: Allows an admin to upload the data.csv file. <br>
 Functionality:
 Parse the data.csv file.
 Save the data into a database.
@@ -34,17 +35,17 @@ Send an email to each user upon successful storage.
 Ensure the email sending does not block the API response.
 
 ### View Data API
-Endpoint: GET /api/users
+Endpoint: GET /api/users <br>
 Description: Allows viewing of all user data stored in the database.
 
 ### Backup Database API
-Endpoint: GET /api/backup
-Description: Allows an admin to take a backup of the database.
+Endpoint: GET /api/backup <br>
+Description: Allows an admin to take a backup of the database. <br>
 Functionality: Generate a backup file (e.g., backup.sql).
 
 ### Restore Database API
-Endpoint: POST /api/restore
-Description: Allows an admin to restore the database from the backup.sql file.
+Endpoint: POST /api/restore <br>
+Description: Allows an admin to restore the database from the backup.sql file. <br>
 Functionality: Restore the database using the backup file.
 
 ### Email Sending
