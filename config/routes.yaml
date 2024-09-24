@@ -1,3 +1,20 @@
-controllers:
-    resource: ../src/Controller/
-    type: attribute
+upload:
+    path: /api/upload
+    controller: App\Controller\UploadController::upload
+    methods: POST
+
+
+users:
+    path: /api/users
+    controller: App\Controller\UserController::getUsers
+    methods: GET
+
+backup:
+    path: /api/backup
+    controller: App\Controller\BackupController::backupDatabase
+    methods: GET
+
+restore:
+    path: /api/restore
+    controller: App\Controller\RestoreController::restoreDatabase
+    methods: POST
