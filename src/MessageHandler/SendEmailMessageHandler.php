@@ -22,7 +22,7 @@ class SendEmailMessageHandler implements MessageHandlerInterface
     {
         try {
             $emailMessage = (new Email())
-                ->from('20bec106@iiitdmj.ac.in')
+                ->from('sender-mail')
                 ->to($message->getEmail())
                 ->subject('Welcome to the platform!')
                 ->text("Hello {$message->getName()}, your data has been successfully stored!");
