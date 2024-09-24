@@ -32,22 +32,20 @@ Parse the data.csv file.
 Save the data into a database.
 Send an email to each user upon successful storage.
 Ensure the email sending does not block the API response.
-View Data API
 
-### Endpoint: GET /api/users
+### View Data API
+Endpoint: GET /api/users
 Description: Allows viewing of all user data stored in the database.
-Backup Database API
 
-### Endpoint: GET /api/backup
+### Backup Database API
+Endpoint: GET /api/backup
 Description: Allows an admin to take a backup of the database.
-Functionality:
-Generate a backup file (e.g., backup.sql).
-Restore Database API
+Functionality: Generate a backup file (e.g., backup.sql).
 
-### Endpoint: POST /api/restore
+### Restore Database API
+Endpoint: POST /api/restore
 Description: Allows an admin to restore the database from the backup.sql file.
-Functionality:
-Restore the database using the backup file.
+Functionality: Restore the database using the backup file.
 
 ### Email Sending
 Utilize an email service to send emails to users upon successful data storage.
